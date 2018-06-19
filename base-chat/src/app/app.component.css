@@ -1,0 +1,16 @@
+/* .chatHeaderWrapper{
+    height : 90px;
+    color : black;
+    box-shadow:   0 2px 3px grey;
+    z-index : 2;
+}
+
+.chatRoom {
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+}
+
+router-outlet{
+    height : 0;
+} */

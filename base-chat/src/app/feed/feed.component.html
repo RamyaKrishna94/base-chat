@@ -1,0 +1,6 @@
+<div class = "feed">
+  <!-- async it going to subscribe in templete level-->
+  <div *ngFor = "let message of feed" class="message">
+    <app-message [chatMessage] = "message"></app-message>
+  </div> 
+  </div>

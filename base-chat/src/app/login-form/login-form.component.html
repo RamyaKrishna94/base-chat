@@ -1,0 +1,21 @@
+<div class="container">
+    <div class = "signupCard">
+      <form #signUpCard = "ngForm">
+          <h2 class = "heading">Login</h2>
+  
+          <label class="label">Email</label>
+          <input type = "email" name = "email"
+          placeholder= "Enter an Email" [(ngModel)] = "email"
+          class="formInput" maxlength="60" required />
+  
+          <label class="label">Password</label>
+          <input type = "password" name = "password"
+          placeholder= "choose a password" [(ngModel)] = "password"
+          class="formInput" required />
+  
+          <button [disabled] = "!signUpCard.form.valid"
+            type = "submit" (click)="login(signUpCard.value)" class="btn" id="btn-signup">Sign Up
+          </button>
+      </form>
+    </div>
+  </div>
